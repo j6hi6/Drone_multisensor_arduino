@@ -37,7 +37,10 @@ void setup()
     while (1)
       ;
   }
- 
+ if (!bme280.init()) {
+        Serial.println("BME280 error!");
+       
+  }
   
 }
 
